@@ -1,0 +1,60 @@
+<body style="background-image: url(https://img.freepik.com/premium-photo/abstract-blur-hospital-corridor-defocused-medical-background_293060-5317.jpg?w=2000); height: 800px; background-repeat: no-repeat;">
+    <nav class="navbar navbar-expand-lg " style="position: absolute;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="homepage"
+                style="font-family: 'Updock', cursive;padding-left: 130px; font-size: 2rem; color: black;"><strong>Jas
+                    Hospitals</strong></a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <button class="btn btn-secondary" style="margin-left: 700px; width: 180px;"
+                       (click)="homepage()"   >Home</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-secondary" style="margin-left: 50px; width: 180px;"
+                       (click)="appoinmentpage()" >Appoinmentpage</button>
+                    </li>
+                   
+                    
+                    
+    
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4">
+            <form style="margin-top: 100px;" (ngSubmit)="reportidsubmit()" [formGroup]="reportidgroup">
+                <h6 style="margin-left: 10px; margin-bottom:20px;">Each patient will have their own unique report id</h6>
+                <input type="text" class="form-control" placeholder="Pls enter your report id" formControlName="reportid" >
+                <button class="btn btn-secondary" type="submit" style="margin-left: 200px; margin-top: 30px;">Submit</button>
+            </form>
+            <table class="table " style=" border: 1px solid white; margin-top:70px ;box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)" *ngIf="reportidd==true">
+                <thead>
+                    <tr>
+                        <th scope="col">TEST NAME</th>
+                        <th scope="col">TEST RESULT</th>
+                        <th scope="col">PATIENT NAME</th>
+                        <th scope="col">TEST ID</th>
+                        
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let data of  reportarray" class="text-center" >
+                        <td>{{data.testname}}</td>
+                        <td>{{data.
+                            testresult}}</td>
+                        <td>{{data.patientname}}</td> 
+                        <td>{{data.testid}}</td>
+                        
+                    </tr>
+                </tbody>
+            </table>
+
+
+        </div>
+        <div class="col-4"></div>
+    </div>
+</body>

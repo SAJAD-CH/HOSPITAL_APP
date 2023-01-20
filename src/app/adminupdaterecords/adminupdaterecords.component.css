@@ -1,0 +1,35 @@
+.reportdiv{
+    margin-top: 60px;
+    border: 1px solid;
+    padding: 10px;
+    cursor: pointer;
+}
+.reportdiv:hover{
+    border-color: blue;
+    box-shadow: 0px 0 25px 0 rgba(16, 110, 234, 0.1);
+    border-color: rgb(59, 126, 226);
+}
+
+.surgerydiv{
+    margin-top: 60px;
+    border: 1px solid;
+    padding: 10px;
+    cursor: pointer;
+}
+.surgerydiv:hover{
+    border-color: blue;
+    box-shadow: 0px 0 25px 0 rgba(16, 110, 234, 0.1);
+    border-color: rgb(59, 126, 226);
+}
+
+.doctordiv{
+    margin-top: 40px;
+    border: 1px solid;
+    padding: 10px;
+    cursor: pointer;
+}
+.doctordiv:hover{
+    border-color: blue;
+    box-shadow: 0px 0 25px 0 rgba(16, 110, 234, 0.1);
+    border-color: rgb(59, 126, 226);
+}

@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:weight@100;200;300;400;500;600;700;800&display=swap");
+
+
+       body{
+        background-color:#545454;
+        font-family:'Courier New', Courier, monospace;
+        font-weight: 300;
+       }
+
+       .container{
+
+        height: 100vh;
+       }
+
+      
+
+       .app-button{
+
+        width: 280px;
+        height: 80px;
+        border-radius: 13px;
+        padding-left: 28px;
+        padding-top: 10px;
+        box-shadow: 0 0 40px rgba(51, 51, 51, .1)
+
+       }
+
+       .app-button i{
+        font-size: 60px;
+        margin-right: 10px;
+       }
+
+
+       
+      
+       
+       
+       
+       /* CSS */
+       .button-67 {
+         align-items: center;
+         background: #f5f5fa;
+         border: 0;
+         border-radius: 8px;
+         box-shadow: -10px -10px 30px 0 #fff,10px 10px 30px 0 #1d0dca17;
+         box-sizing: border-box;
+         color: #2a1f62;
+         cursor: pointer;
+         display: flex;
+         font-family: "Cascadia Code",Consolas,Monaco,"Andale Mono","Ubuntu Mono",monospace;
+         font-size: 1rem;
+         justify-content: center;
+         line-height: 1.5rem;
+         padding: 15px;
+         position: relative;
+         text-align: left;
+         transition: .2s;
+         user-select: none;
+         -webkit-user-select: none;
+         touch-action: manipulation;
+         white-space: pre;
+         width: max-content;
+         word-break: normal;
+         word-spacing: normal;
+       }
+       
+       .button-67:hover {
+         background: #f8f8ff;
+         box-shadow: -15px -15px 30px 0 #fff, 15px 15px 30px 0 #1d0dca17;
+       }
+       
+       @media (min-width: 768px) {
+         .button-67 {
+           padding: 24px;
+         }
+       }
+
+
+
+/* CSS */
+.button-80 {
+  background: rgba(255, 255, 255, 0.692);
+  backface-visibility: hidden;
+  border-radius: .375rem;
+  border-style: solid;
+  border-width: .125rem;
+  box-sizing: border-box;
+  color: #212121;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Circular,Helvetica,sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: -.01em;
+  line-height: 1.3;
+  padding: .875rem 1.125rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transform: translateZ(0) scale(1);
+  transition: transform .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-80:not(:disabled):hover {
+  transform: scale(1.05);
+}
+
+.button-80:not(:disabled):hover:active {
+  transform: scale(1.05) translateY(.125rem);
+}
+
+.button-80:focus {
+  outline: 0 solid transparent;
+}
+
+.button-80:focus:before {
+  content: "";
+  left: calc(-1*.375rem);
+  pointer-events: none;
+  position: absolute;
+  top: calc(-1*.375rem);
+  transition: border-radius;
+  user-select: none;
+}
+
+.button-80:focus:not(:focus-visible) {
+  outline: 0 solid transparent;
+}
+
+.button-80:focus:not(:focus-visible):before {
+  border-width: 0;
+}
+
+.button-80:not(:disabled):active {
+  transform: translateY(.125rem);
+}
+
+
+/* CSS */
+.button-23 {
+  background-color: #FFFFFF;
+  border: 1px solid #222222;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #222222;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  padding: 13px 23px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
+  user-select: none;
+  -webkit-user-select: none;
+  width: auto;
+}
+
+.button-23:focus-visible {
+  box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+  transition: box-shadow .2s;
+}
+
+.button-23:active {
+  background-color: #F7F7F7;
+  border-color: #000000;
+  transform: scale(.96);
+}
+
+.button-23:disabled {
+  border-color: #DDDDDD;
+  color: #DDDDDD;
+  cursor: not-allowed;
+  opacity: 1;
+}
+               
+       
+      
+
+       
+
+

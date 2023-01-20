@@ -1,0 +1,35 @@
+<body style="background-image: url();">
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4">
+            <div class="doctordiv">
+                <form style=" padding: 10px;" (ngSubmit)="deletedoctor()" [formGroup]="doctordeletegroup">
+                    <label style="margin-left: 100px;">Enter the doctor name to be deleted</label>
+                    <input type="text" class="form-control" style="margin-bottom:20px;" formControlName="drname">
+                    <button type="submit" class="btn btn-danger" style="margin-left:200px ;">Delete</button>
+                </form>
+            </div>
+
+
+            <div class="surgerydiv">
+                <form style="margin-top: px;  padding: 10px;" (ngSubmit)="deletesurgery()"
+                    [formGroup]="deletesurgerygroup">
+                    <label style="margin-top: 20px;margin-left: 100px;">Enter the surgery name to be deleted</label>
+                    <input type="text" class="form-control" style="margin-bottom: 20px;" formControlName="surid">
+                    <button type="submit" class="btn btn-danger" style="margin-left: 200px;">Delete</button>
+
+                </form>
+            </div>
+            <div class="reportdiv">
+                <form (ngSubmit)="deletereport()" [formGroup]="deletereportgroup">
+                    <label style="margin-top: 20px;margin-left: 100px;">Enter the report testid of a patient to delete</label>
+                    <input type="text" class="form-control" style="margin-bottom: 20px;" formControlName="testid">
+                    <button type="submit" class="btn btn-danger" style="margin-left: 200px;">Delete</button>
+                </form>
+            </div>
+
+        </div>
+        <div class="col-4"></div>
+
+    </div>
+</body>

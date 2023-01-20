@@ -1,0 +1,30 @@
+
+<div class="row">
+    <div class="col-2"></div>
+    <div class="col-8">
+        <h2 style="margin-top:20px; margin-left: 0px;"><marquee scrollamount="15" width="100%"> AVAILABLE SURGERIES</marquee></h2>
+        <table class="table table-success" style=" border: 1px solid white; margin-top:70px ;">
+            <thead>
+                <tr>
+                    <th scope="col">SURGERY NAME</th>
+                    <th scope="col">DR NAME</th>
+                    <th scope="col">SURGERY DURATION</th>
+                    <th scope="col">SURGERY FEE</th>
+                    
+                    <!-- add aaya eventsokke ivdeyaanne undakal -->
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let data of surgeryarray" >
+                    <td>{{data.surname}}</td>
+                    <td>{{data.drname}}</td>
+                    <td>{{data.surduration}}</td> 
+                    <td>{{data.surfees}}</td>
+                    
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="col-2"></div>
+
+</div>

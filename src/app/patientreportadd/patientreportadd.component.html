@@ -1,0 +1,30 @@
+<body>
+    <div class="wrapper">
+        <form (ngSubmit)="patientreportadd()" [formGroup]="patientreport">
+            <div class="h5 font-weight-bold text-center mb-3">Test Result Addition</div>
+            <div class="form-group d-flex align-items-center">
+                <div class="icon"><span class="far fa-user"></span></div>
+                <input autocomplete="off" type="text" class="form-control" placeholder="Patient Name" formControlName="patientname" name="patientname">
+            </div>
+            <div class="form-group d-flex align-items-center">
+                <div class="icon"><span class="far fa-envelope"></span></div>
+                <input autocomplete="off" type="number" class="form-control" placeholder="Report Id" formControlName="reportid" name="reportid">
+            </div>
+            <div class="form-group d-flex align-items-center">
+                <div class="icon"><span class="fas fa-phone"></span></div>
+                <input autocomplete="off" type="text" class="form-control" placeholder="Test Name" formControlName="testname" name="testname">
+            </div>
+            <div class="form-group d-flex align-items-center">
+                <div class="icon"><span class="fas fa-map-marker-alt"></span></div>
+                <input autocomplete="off" type="text" class="form-control" placeholder="Test Result" formControlName="testresult" name="testresult">
+            </div>
+            <div class="form-group d-flex align-items-center">
+                <div class="icon"><span class="fas fa-map-marker-alt"></span></div>
+                <input autocomplete="off" type="text" class="form-control" placeholder="Test Id" formControlName="testid" name="testid">
+            </div>
+            <button type="submit" class="btn btn-primary mb-3" style="margin-left:150px ;">ADD</button>
+            
+            
+        </form>
+    </div>
+</body>
